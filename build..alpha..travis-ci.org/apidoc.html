@@ -1,0 +1,5101 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="http://github.com/leankit-labs/seriate"
+
+    >seriate (v0.9.0)</a>
+</h1>
+<h4>A cross platform module for Microsoft SQL Server that wraps node-mssql</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate">module seriate</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.BIGINT">
+            function <span class="apidocSignatureSpan">seriate.</span>BIGINT
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.BINARY">
+            function <span class="apidocSignatureSpan">seriate.</span>BINARY
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.BIT">
+            function <span class="apidocSignatureSpan">seriate.</span>BIT
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.BigInt">
+            function <span class="apidocSignatureSpan">seriate.</span>BigInt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Binary">
+            function <span class="apidocSignatureSpan">seriate.</span>Binary
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Bit">
+            function <span class="apidocSignatureSpan">seriate.</span>Bit
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.CHAR">
+            function <span class="apidocSignatureSpan">seriate.</span>CHAR
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Char">
+            function <span class="apidocSignatureSpan">seriate.</span>Char
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DATE">
+            function <span class="apidocSignatureSpan">seriate.</span>DATE
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DATETIME">
+            function <span class="apidocSignatureSpan">seriate.</span>DATETIME
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DATETIME2">
+            function <span class="apidocSignatureSpan">seriate.</span>DATETIME2
+            <span class="apidocSignatureSpan">(scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DATETIMEOFFSET">
+            function <span class="apidocSignatureSpan">seriate.</span>DATETIMEOFFSET
+            <span class="apidocSignatureSpan">(scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DECIMAL">
+            function <span class="apidocSignatureSpan">seriate.</span>DECIMAL
+            <span class="apidocSignatureSpan">(precision, scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Date">
+            function <span class="apidocSignatureSpan">seriate.</span>Date
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DateTime">
+            function <span class="apidocSignatureSpan">seriate.</span>DateTime
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DateTime2">
+            function <span class="apidocSignatureSpan">seriate.</span>DateTime2
+            <span class="apidocSignatureSpan">(scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DateTimeOffset">
+            function <span class="apidocSignatureSpan">seriate.</span>DateTimeOffset
+            <span class="apidocSignatureSpan">(scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Decimal">
+            function <span class="apidocSignatureSpan">seriate.</span>Decimal
+            <span class="apidocSignatureSpan">(precision, scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.FLOAT">
+            function <span class="apidocSignatureSpan">seriate.</span>FLOAT
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Float">
+            function <span class="apidocSignatureSpan">seriate.</span>Float
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.GEOGRAPHY">
+            function <span class="apidocSignatureSpan">seriate.</span>GEOGRAPHY
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.GEOMETRY">
+            function <span class="apidocSignatureSpan">seriate.</span>GEOMETRY
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Geography">
+            function <span class="apidocSignatureSpan">seriate.</span>Geography
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Geometry">
+            function <span class="apidocSignatureSpan">seriate.</span>Geometry
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.IMAGE">
+            function <span class="apidocSignatureSpan">seriate.</span>IMAGE
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.INT">
+            function <span class="apidocSignatureSpan">seriate.</span>INT
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Image">
+            function <span class="apidocSignatureSpan">seriate.</span>Image
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Int">
+            function <span class="apidocSignatureSpan">seriate.</span>Int
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.MONEY">
+            function <span class="apidocSignatureSpan">seriate.</span>MONEY
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Money">
+            function <span class="apidocSignatureSpan">seriate.</span>Money
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NCHAR">
+            function <span class="apidocSignatureSpan">seriate.</span>NCHAR
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NChar">
+            function <span class="apidocSignatureSpan">seriate.</span>NChar
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NTEXT">
+            function <span class="apidocSignatureSpan">seriate.</span>NTEXT
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NText">
+            function <span class="apidocSignatureSpan">seriate.</span>NText
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NUMERIC">
+            function <span class="apidocSignatureSpan">seriate.</span>NUMERIC
+            <span class="apidocSignatureSpan">(precision, scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NVARCHAR">
+            function <span class="apidocSignatureSpan">seriate.</span>NVARCHAR
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NVarChar">
+            function <span class="apidocSignatureSpan">seriate.</span>NVarChar
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Numeric">
+            function <span class="apidocSignatureSpan">seriate.</span>Numeric
+            <span class="apidocSignatureSpan">(precision, scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.REAL">
+            function <span class="apidocSignatureSpan">seriate.</span>REAL
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Real">
+            function <span class="apidocSignatureSpan">seriate.</span>Real
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SMALLDATETIME">
+            function <span class="apidocSignatureSpan">seriate.</span>SMALLDATETIME
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SMALLINT">
+            function <span class="apidocSignatureSpan">seriate.</span>SMALLINT
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SMALLMONEY">
+            function <span class="apidocSignatureSpan">seriate.</span>SMALLMONEY
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SmallDateTime">
+            function <span class="apidocSignatureSpan">seriate.</span>SmallDateTime
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SmallInt">
+            function <span class="apidocSignatureSpan">seriate.</span>SmallInt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SmallMoney">
+            function <span class="apidocSignatureSpan">seriate.</span>SmallMoney
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.TEXT">
+            function <span class="apidocSignatureSpan">seriate.</span>TEXT
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.TIME">
+            function <span class="apidocSignatureSpan">seriate.</span>TIME
+            <span class="apidocSignatureSpan">(scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.TINYINT">
+            function <span class="apidocSignatureSpan">seriate.</span>TINYINT
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.TVP">
+            function <span class="apidocSignatureSpan">seriate.</span>TVP
+            <span class="apidocSignatureSpan">(tvpType)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Text">
+            function <span class="apidocSignatureSpan">seriate.</span>Text
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Time">
+            function <span class="apidocSignatureSpan">seriate.</span>Time
+            <span class="apidocSignatureSpan">(scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.TinyInt">
+            function <span class="apidocSignatureSpan">seriate.</span>TinyInt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.UDT">
+            function <span class="apidocSignatureSpan">seriate.</span>UDT
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.UNIQUEIDENTIFIER">
+            function <span class="apidocSignatureSpan">seriate.</span>UNIQUEIDENTIFIER
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.UniqueIdentifier">
+            function <span class="apidocSignatureSpan">seriate.</span>UniqueIdentifier
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.VARBINARY">
+            function <span class="apidocSignatureSpan">seriate.</span>VARBINARY
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.VARCHAR">
+            function <span class="apidocSignatureSpan">seriate.</span>VARCHAR
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.VarBinary">
+            function <span class="apidocSignatureSpan">seriate.</span>VarBinary
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.VarChar">
+            function <span class="apidocSignatureSpan">seriate.</span>VarChar
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.XML">
+            function <span class="apidocSignatureSpan">seriate.</span>XML
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Xml">
+            function <span class="apidocSignatureSpan">seriate.</span>Xml
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.addConnection">
+            function <span class="apidocSignatureSpan">seriate.</span>addConnection
+            <span class="apidocSignatureSpan">( config )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.closeConnection">
+            function <span class="apidocSignatureSpan">seriate.</span>closeConnection
+            <span class="apidocSignatureSpan">( config )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.emit">
+            function <span class="apidocSignatureSpan">seriate.</span>emit
+            <span class="apidocSignatureSpan">( topic, data )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.execute">
+            function <span class="apidocSignatureSpan">seriate.</span>execute
+            <span class="apidocSignatureSpan">( connection, queryOptions )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.executeTransaction">
+            function <span class="apidocSignatureSpan">seriate.</span>executeTransaction
+            <span class="apidocSignatureSpan">( connection, queryOptions )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.first">
+            function <span class="apidocSignatureSpan">seriate.</span>first
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.fromFile">
+            function <span class="apidocSignatureSpan">seriate.</span>fromFile
+            <span class="apidocSignatureSpan">( p )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.getEnvelope">
+            function <span class="apidocSignatureSpan">seriate.</span>getEnvelope
+            <span class="apidocSignatureSpan">( topic, data )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.getPlainContext">
+            function <span class="apidocSignatureSpan">seriate.</span>getPlainContext
+            <span class="apidocSignatureSpan">( connection )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.getTransactionContext">
+            function <span class="apidocSignatureSpan">seriate.</span>getTransactionContext
+            <span class="apidocSignatureSpan">( connection )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.off">
+            function <span class="apidocSignatureSpan">seriate.</span>off
+            <span class="apidocSignatureSpan">( topic, context )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.on">
+            function <span class="apidocSignatureSpan">seriate.</span>on
+            <span class="apidocSignatureSpan">( topic, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.once">
+            function <span class="apidocSignatureSpan">seriate.</span>once
+            <span class="apidocSignatureSpan">( topic, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.resetConnections">
+            function <span class="apidocSignatureSpan">seriate.</span>resetConnections
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.setDefault">
+            function <span class="apidocSignatureSpan">seriate.</span>setDefault
+            <span class="apidocSignatureSpan">( config )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.setDefaultConfig">
+            function <span class="apidocSignatureSpan">seriate.</span>setDefaultConfig
+            <span class="apidocSignatureSpan">( config )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.useMetrics">
+            function <span class="apidocSignatureSpan">seriate.</span>useMetrics
+            <span class="apidocSignatureSpan">( metrics, namespace )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">seriate.</span>MAX</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">seriate.</span>READ_COMMITTED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">seriate.</span>READ_UNCOMMITTED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">seriate.</span>REPEATABLE_READ</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">seriate.</span>SERIALIZABLE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">seriate.</span>SNAPSHOT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">seriate.</span>connections</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">seriate.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.BigInt">module seriate.BigInt</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.BigInt.BigInt">
+            function <span class="apidocSignatureSpan">seriate.</span>BigInt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.BigInt.inspect">
+            function <span class="apidocSignatureSpan">seriate.BigInt.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.BigInt.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Binary">module seriate.Binary</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Binary.Binary">
+            function <span class="apidocSignatureSpan">seriate.</span>Binary
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Binary.inspect">
+            function <span class="apidocSignatureSpan">seriate.Binary.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Binary.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Bit">module seriate.Bit</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Bit.Bit">
+            function <span class="apidocSignatureSpan">seriate.</span>Bit
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Bit.inspect">
+            function <span class="apidocSignatureSpan">seriate.Bit.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Bit.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Char">module seriate.Char</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Char.Char">
+            function <span class="apidocSignatureSpan">seriate.</span>Char
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Char.inspect">
+            function <span class="apidocSignatureSpan">seriate.Char.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Char.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Date">module seriate.Date</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Date.Date">
+            function <span class="apidocSignatureSpan">seriate.</span>Date
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Date.inspect">
+            function <span class="apidocSignatureSpan">seriate.Date.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Date.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.DateTime">module seriate.DateTime</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DateTime.DateTime">
+            function <span class="apidocSignatureSpan">seriate.</span>DateTime
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DateTime.inspect">
+            function <span class="apidocSignatureSpan">seriate.DateTime.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.DateTime.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.DateTime2">module seriate.DateTime2</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DateTime2.DateTime2">
+            function <span class="apidocSignatureSpan">seriate.</span>DateTime2
+            <span class="apidocSignatureSpan">(scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DateTime2.inspect">
+            function <span class="apidocSignatureSpan">seriate.DateTime2.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.DateTime2.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.DateTimeOffset">module seriate.DateTimeOffset</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DateTimeOffset.DateTimeOffset">
+            function <span class="apidocSignatureSpan">seriate.</span>DateTimeOffset
+            <span class="apidocSignatureSpan">(scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.DateTimeOffset.inspect">
+            function <span class="apidocSignatureSpan">seriate.DateTimeOffset.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.DateTimeOffset.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Decimal">module seriate.Decimal</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Decimal.Decimal">
+            function <span class="apidocSignatureSpan">seriate.</span>Decimal
+            <span class="apidocSignatureSpan">(precision, scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Decimal.inspect">
+            function <span class="apidocSignatureSpan">seriate.Decimal.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Decimal.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Float">module seriate.Float</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Float.Float">
+            function <span class="apidocSignatureSpan">seriate.</span>Float
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Float.inspect">
+            function <span class="apidocSignatureSpan">seriate.Float.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Float.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Geography">module seriate.Geography</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Geography.Geography">
+            function <span class="apidocSignatureSpan">seriate.</span>Geography
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Geography.inspect">
+            function <span class="apidocSignatureSpan">seriate.Geography.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Geography.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Geometry">module seriate.Geometry</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Geometry.Geometry">
+            function <span class="apidocSignatureSpan">seriate.</span>Geometry
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Geometry.inspect">
+            function <span class="apidocSignatureSpan">seriate.Geometry.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Geometry.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Image">module seriate.Image</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Image.Image">
+            function <span class="apidocSignatureSpan">seriate.</span>Image
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Image.inspect">
+            function <span class="apidocSignatureSpan">seriate.Image.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Image.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Int">module seriate.Int</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Int.Int">
+            function <span class="apidocSignatureSpan">seriate.</span>Int
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Int.inspect">
+            function <span class="apidocSignatureSpan">seriate.Int.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Int.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Money">module seriate.Money</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Money.Money">
+            function <span class="apidocSignatureSpan">seriate.</span>Money
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Money.inspect">
+            function <span class="apidocSignatureSpan">seriate.Money.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Money.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.NChar">module seriate.NChar</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NChar.NChar">
+            function <span class="apidocSignatureSpan">seriate.</span>NChar
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NChar.inspect">
+            function <span class="apidocSignatureSpan">seriate.NChar.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.NChar.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.NText">module seriate.NText</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NText.NText">
+            function <span class="apidocSignatureSpan">seriate.</span>NText
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NText.inspect">
+            function <span class="apidocSignatureSpan">seriate.NText.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.NText.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.NVarChar">module seriate.NVarChar</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NVarChar.NVarChar">
+            function <span class="apidocSignatureSpan">seriate.</span>NVarChar
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.NVarChar.inspect">
+            function <span class="apidocSignatureSpan">seriate.NVarChar.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.NVarChar.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Numeric">module seriate.Numeric</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Numeric.Numeric">
+            function <span class="apidocSignatureSpan">seriate.</span>Numeric
+            <span class="apidocSignatureSpan">(precision, scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Numeric.inspect">
+            function <span class="apidocSignatureSpan">seriate.Numeric.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Numeric.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Real">module seriate.Real</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Real.Real">
+            function <span class="apidocSignatureSpan">seriate.</span>Real
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Real.inspect">
+            function <span class="apidocSignatureSpan">seriate.Real.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Real.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.SmallDateTime">module seriate.SmallDateTime</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SmallDateTime.SmallDateTime">
+            function <span class="apidocSignatureSpan">seriate.</span>SmallDateTime
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SmallDateTime.inspect">
+            function <span class="apidocSignatureSpan">seriate.SmallDateTime.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.SmallDateTime.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.SmallInt">module seriate.SmallInt</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SmallInt.SmallInt">
+            function <span class="apidocSignatureSpan">seriate.</span>SmallInt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SmallInt.inspect">
+            function <span class="apidocSignatureSpan">seriate.SmallInt.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.SmallInt.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.SmallMoney">module seriate.SmallMoney</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SmallMoney.SmallMoney">
+            function <span class="apidocSignatureSpan">seriate.</span>SmallMoney
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.SmallMoney.inspect">
+            function <span class="apidocSignatureSpan">seriate.SmallMoney.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.SmallMoney.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.TVP">module seriate.TVP</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.TVP.TVP">
+            function <span class="apidocSignatureSpan">seriate.</span>TVP
+            <span class="apidocSignatureSpan">(tvpType)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.TVP.inspect">
+            function <span class="apidocSignatureSpan">seriate.TVP.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.TVP.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Text">module seriate.Text</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Text.Text">
+            function <span class="apidocSignatureSpan">seriate.</span>Text
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Text.inspect">
+            function <span class="apidocSignatureSpan">seriate.Text.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Text.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Time">module seriate.Time</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Time.Time">
+            function <span class="apidocSignatureSpan">seriate.</span>Time
+            <span class="apidocSignatureSpan">(scale)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Time.inspect">
+            function <span class="apidocSignatureSpan">seriate.Time.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Time.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.TinyInt">module seriate.TinyInt</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.TinyInt.TinyInt">
+            function <span class="apidocSignatureSpan">seriate.</span>TinyInt
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.TinyInt.inspect">
+            function <span class="apidocSignatureSpan">seriate.TinyInt.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.TinyInt.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.UDT">module seriate.UDT</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.UDT.UDT">
+            function <span class="apidocSignatureSpan">seriate.</span>UDT
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.UDT.inspect">
+            function <span class="apidocSignatureSpan">seriate.UDT.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.UDT.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.UniqueIdentifier">module seriate.UniqueIdentifier</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.UniqueIdentifier.UniqueIdentifier">
+            function <span class="apidocSignatureSpan">seriate.</span>UniqueIdentifier
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.UniqueIdentifier.inspect">
+            function <span class="apidocSignatureSpan">seriate.UniqueIdentifier.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.UniqueIdentifier.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.VarBinary">module seriate.VarBinary</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.VarBinary.VarBinary">
+            function <span class="apidocSignatureSpan">seriate.</span>VarBinary
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.VarBinary.inspect">
+            function <span class="apidocSignatureSpan">seriate.VarBinary.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.VarBinary.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.VarChar">module seriate.VarChar</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.VarChar.VarChar">
+            function <span class="apidocSignatureSpan">seriate.</span>VarChar
+            <span class="apidocSignatureSpan">(length)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.VarChar.inspect">
+            function <span class="apidocSignatureSpan">seriate.VarChar.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.VarChar.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.Xml">module seriate.Xml</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Xml.Xml">
+            function <span class="apidocSignatureSpan">seriate.</span>Xml
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.Xml.inspect">
+            function <span class="apidocSignatureSpan">seriate.Xml.</span>inspect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">seriate.Xml.</span>declaration</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.connections">module seriate.connections</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.connections.add">
+            function <span class="apidocSignatureSpan">seriate.connections.</span>add
+            <span class="apidocSignatureSpan">( config )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.connections.close">
+            function <span class="apidocSignatureSpan">seriate.connections.</span>close
+            <span class="apidocSignatureSpan">( config )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.connections.emit">
+            function <span class="apidocSignatureSpan">seriate.connections.</span>emit
+            <span class="apidocSignatureSpan">( topic, data )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.connections.get">
+            function <span class="apidocSignatureSpan">seriate.connections.</span>get
+            <span class="apidocSignatureSpan">( config )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.connections.getEnvelope">
+            function <span class="apidocSignatureSpan">seriate.connections.</span>getEnvelope
+            <span class="apidocSignatureSpan">( topic, data )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.connections.off">
+            function <span class="apidocSignatureSpan">seriate.connections.</span>off
+            <span class="apidocSignatureSpan">( topic, context )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.connections.on">
+            function <span class="apidocSignatureSpan">seriate.connections.</span>on
+            <span class="apidocSignatureSpan">( topic, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.connections.once">
+            function <span class="apidocSignatureSpan">seriate.connections.</span>once
+            <span class="apidocSignatureSpan">( topic, callback )</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.connections.reset">
+            function <span class="apidocSignatureSpan">seriate.connections.</span>reset
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">seriate.connections.</span>_subscriptions</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">seriate.connections.</span>state</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.seriate.utils">module seriate.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.seriate.utils.fromFile">
+            function <span class="apidocSignatureSpan">seriate.utils.</span>fromFile
+            <span class="apidocSignatureSpan">( p )</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate" id="apidoc.module.seriate">module seriate</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.BIGINT" id="apidoc.element.seriate.BIGINT">
+        function <span class="apidocSignatureSpan">seriate.</span>BIGINT
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">BIGINT = function () {
+  return {
+    type: TYPES.BigInt
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.BINARY" id="apidoc.element.seriate.BINARY">
+        function <span class="apidocSignatureSpan">seriate.</span>BINARY
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">BINARY = function (length) {
+  return {
+    type: TYPES.Binary,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.BIT" id="apidoc.element.seriate.BIT">
+        function <span class="apidocSignatureSpan">seriate.</span>BIT
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">BIT = function () {
+  return {
+    type: TYPES.Bit
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.BigInt" id="apidoc.element.seriate.BigInt">
+        function <span class="apidocSignatureSpan">seriate.</span>BigInt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">BigInt = function () {
+  return {
+    type: TYPES.BigInt
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Binary" id="apidoc.element.seriate.Binary">
+        function <span class="apidocSignatureSpan">seriate.</span>Binary
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Binary = function (length) {
+  return {
+    type: TYPES.Binary,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Bit" id="apidoc.element.seriate.Bit">
+        function <span class="apidocSignatureSpan">seriate.</span>Bit
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Bit = function () {
+  return {
+    type: TYPES.Bit
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.CHAR" id="apidoc.element.seriate.CHAR">
+        function <span class="apidocSignatureSpan">seriate.</span>CHAR
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">CHAR = function (length) {
+  return {
+    type: TYPES.Char,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Char" id="apidoc.element.seriate.Char">
+        function <span class="apidocSignatureSpan">seriate.</span>Char
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Char = function (length) {
+  return {
+    type: TYPES.Char,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DATE" id="apidoc.element.seriate.DATE">
+        function <span class="apidocSignatureSpan">seriate.</span>DATE
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DATE = function () {
+  return {
+    type: TYPES.Date
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DATETIME" id="apidoc.element.seriate.DATETIME">
+        function <span class="apidocSignatureSpan">seriate.</span>DATETIME
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DATETIME = function () {
+  return {
+    type: TYPES.DateTime
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DATETIME2" id="apidoc.element.seriate.DATETIME2">
+        function <span class="apidocSignatureSpan">seriate.</span>DATETIME2
+        <span class="apidocSignatureSpan">(scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DATETIME2 = function (scale) {
+  return {
+    type: TYPES.DateTime2,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DATETIMEOFFSET" id="apidoc.element.seriate.DATETIMEOFFSET">
+        function <span class="apidocSignatureSpan">seriate.</span>DATETIMEOFFSET
+        <span class="apidocSignatureSpan">(scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DATETIMEOFFSET = function (scale) {
+  return {
+    type: TYPES.DateTimeOffset,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DECIMAL" id="apidoc.element.seriate.DECIMAL">
+        function <span class="apidocSignatureSpan">seriate.</span>DECIMAL
+        <span class="apidocSignatureSpan">(precision, scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DECIMAL = function (precision, scale) {
+  return {
+    type: TYPES.Decimal,
+    precision: precision,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Date" id="apidoc.element.seriate.Date">
+        function <span class="apidocSignatureSpan">seriate.</span>Date
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Date = function () {
+  return {
+    type: TYPES.Date
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DateTime" id="apidoc.element.seriate.DateTime">
+        function <span class="apidocSignatureSpan">seriate.</span>DateTime
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DateTime = function () {
+  return {
+    type: TYPES.DateTime
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DateTime2" id="apidoc.element.seriate.DateTime2">
+        function <span class="apidocSignatureSpan">seriate.</span>DateTime2
+        <span class="apidocSignatureSpan">(scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DateTime2 = function (scale) {
+  return {
+    type: TYPES.DateTime2,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DateTimeOffset" id="apidoc.element.seriate.DateTimeOffset">
+        function <span class="apidocSignatureSpan">seriate.</span>DateTimeOffset
+        <span class="apidocSignatureSpan">(scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DateTimeOffset = function (scale) {
+  return {
+    type: TYPES.DateTimeOffset,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Decimal" id="apidoc.element.seriate.Decimal">
+        function <span class="apidocSignatureSpan">seriate.</span>Decimal
+        <span class="apidocSignatureSpan">(precision, scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Decimal = function (precision, scale) {
+  return {
+    type: TYPES.Decimal,
+    precision: precision,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.FLOAT" id="apidoc.element.seriate.FLOAT">
+        function <span class="apidocSignatureSpan">seriate.</span>FLOAT
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">FLOAT = function () {
+  return {
+    type: TYPES.Float
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Float" id="apidoc.element.seriate.Float">
+        function <span class="apidocSignatureSpan">seriate.</span>Float
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Float = function () {
+  return {
+    type: TYPES.Float
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.GEOGRAPHY" id="apidoc.element.seriate.GEOGRAPHY">
+        function <span class="apidocSignatureSpan">seriate.</span>GEOGRAPHY
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">GEOGRAPHY = function () {
+  return {
+    type: TYPES.Geography
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.GEOMETRY" id="apidoc.element.seriate.GEOMETRY">
+        function <span class="apidocSignatureSpan">seriate.</span>GEOMETRY
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">GEOMETRY = function () {
+  return {
+    type: TYPES.Geometry
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Geography" id="apidoc.element.seriate.Geography">
+        function <span class="apidocSignatureSpan">seriate.</span>Geography
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Geography = function () {
+  return {
+    type: TYPES.Geography
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Geometry" id="apidoc.element.seriate.Geometry">
+        function <span class="apidocSignatureSpan">seriate.</span>Geometry
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Geometry = function () {
+  return {
+    type: TYPES.Geometry
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.IMAGE" id="apidoc.element.seriate.IMAGE">
+        function <span class="apidocSignatureSpan">seriate.</span>IMAGE
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">IMAGE = function () {
+  return {
+    type: TYPES.Image
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.INT" id="apidoc.element.seriate.INT">
+        function <span class="apidocSignatureSpan">seriate.</span>INT
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">INT = function () {
+  return {
+    type: TYPES.Int
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Image" id="apidoc.element.seriate.Image">
+        function <span class="apidocSignatureSpan">seriate.</span>Image
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Image = function () {
+  return {
+    type: TYPES.Image
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Int" id="apidoc.element.seriate.Int">
+        function <span class="apidocSignatureSpan">seriate.</span>Int
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Int = function () {
+  return {
+    type: TYPES.Int
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.MONEY" id="apidoc.element.seriate.MONEY">
+        function <span class="apidocSignatureSpan">seriate.</span>MONEY
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">MONEY = function () {
+  return {
+    type: TYPES.Money
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Money" id="apidoc.element.seriate.Money">
+        function <span class="apidocSignatureSpan">seriate.</span>Money
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Money = function () {
+  return {
+    type: TYPES.Money
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NCHAR" id="apidoc.element.seriate.NCHAR">
+        function <span class="apidocSignatureSpan">seriate.</span>NCHAR
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NCHAR = function (length) {
+  return {
+    type: TYPES.NChar,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NChar" id="apidoc.element.seriate.NChar">
+        function <span class="apidocSignatureSpan">seriate.</span>NChar
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NChar = function (length) {
+  return {
+    type: TYPES.NChar,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NTEXT" id="apidoc.element.seriate.NTEXT">
+        function <span class="apidocSignatureSpan">seriate.</span>NTEXT
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NTEXT = function () {
+  return {
+    type: TYPES.NText
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NText" id="apidoc.element.seriate.NText">
+        function <span class="apidocSignatureSpan">seriate.</span>NText
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NText = function () {
+  return {
+    type: TYPES.NText
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NUMERIC" id="apidoc.element.seriate.NUMERIC">
+        function <span class="apidocSignatureSpan">seriate.</span>NUMERIC
+        <span class="apidocSignatureSpan">(precision, scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NUMERIC = function (precision, scale) {
+  return {
+    type: TYPES.Numeric,
+    precision: precision,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NVARCHAR" id="apidoc.element.seriate.NVARCHAR">
+        function <span class="apidocSignatureSpan">seriate.</span>NVARCHAR
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NVARCHAR = function (length) {
+  return {
+    type: TYPES.NVarChar,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+				{ id: 1, firstName: &#x22;James&#x22;, middleName: &#x22;Paul&#x22;},
+				{ id: 2, firstName: &#x22;John&#x22;, middleName: &#x22;Winston&#x22; },
+				{ id: 3, firstName: &#x22;George&#x22;, middleName: &#x22;Harold&#x22; },
+				{ id: 4, firstName: &#x22;Richard&#x22;, middleName: &#x22;Parkin&#x22; }
+			],
+			asTable: {
+				id: sql.INT,
+				firstName: sql.<span class="apidocCodeKeywordSpan">NVARCHAR</span>(50),
+				middleName: sql.NVARCHAR(50)
+			}
+		}
+	}
+} )
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NVarChar" id="apidoc.element.seriate.NVarChar">
+        function <span class="apidocSignatureSpan">seriate.</span>NVarChar
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NVarChar = function (length) {
+  return {
+    type: TYPES.NVarChar,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Numeric" id="apidoc.element.seriate.Numeric">
+        function <span class="apidocSignatureSpan">seriate.</span>Numeric
+        <span class="apidocSignatureSpan">(precision, scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Numeric = function (precision, scale) {
+  return {
+    type: TYPES.Numeric,
+    precision: precision,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.REAL" id="apidoc.element.seriate.REAL">
+        function <span class="apidocSignatureSpan">seriate.</span>REAL
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">REAL = function () {
+  return {
+    type: TYPES.Real
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Real" id="apidoc.element.seriate.Real">
+        function <span class="apidocSignatureSpan">seriate.</span>Real
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Real = function () {
+  return {
+    type: TYPES.Real
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SMALLDATETIME" id="apidoc.element.seriate.SMALLDATETIME">
+        function <span class="apidocSignatureSpan">seriate.</span>SMALLDATETIME
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SMALLDATETIME = function () {
+  return {
+    type: TYPES.SmallDateTime
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SMALLINT" id="apidoc.element.seriate.SMALLINT">
+        function <span class="apidocSignatureSpan">seriate.</span>SMALLINT
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SMALLINT = function () {
+  return {
+    type: TYPES.SmallInt
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SMALLMONEY" id="apidoc.element.seriate.SMALLMONEY">
+        function <span class="apidocSignatureSpan">seriate.</span>SMALLMONEY
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SMALLMONEY = function () {
+  return {
+    type: TYPES.SmallMoney
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SmallDateTime" id="apidoc.element.seriate.SmallDateTime">
+        function <span class="apidocSignatureSpan">seriate.</span>SmallDateTime
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SmallDateTime = function () {
+  return {
+    type: TYPES.SmallDateTime
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SmallInt" id="apidoc.element.seriate.SmallInt">
+        function <span class="apidocSignatureSpan">seriate.</span>SmallInt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SmallInt = function () {
+  return {
+    type: TYPES.SmallInt
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SmallMoney" id="apidoc.element.seriate.SmallMoney">
+        function <span class="apidocSignatureSpan">seriate.</span>SmallMoney
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SmallMoney = function () {
+  return {
+    type: TYPES.SmallMoney
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.TEXT" id="apidoc.element.seriate.TEXT">
+        function <span class="apidocSignatureSpan">seriate.</span>TEXT
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TEXT = function () {
+  return {
+    type: TYPES.Text
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.TIME" id="apidoc.element.seriate.TIME">
+        function <span class="apidocSignatureSpan">seriate.</span>TIME
+        <span class="apidocSignatureSpan">(scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TIME = function (scale) {
+  return {
+    type: TYPES.Time,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.TINYINT" id="apidoc.element.seriate.TINYINT">
+        function <span class="apidocSignatureSpan">seriate.</span>TINYINT
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TINYINT = function () {
+  return {
+    type: TYPES.TinyInt
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.TVP" id="apidoc.element.seriate.TVP">
+        function <span class="apidocSignatureSpan">seriate.</span>TVP
+        <span class="apidocSignatureSpan">(tvpType)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TVP = function (tvpType) {
+  return {
+    type: TYPES.TVP,
+    tvpType: tvpType
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Text" id="apidoc.element.seriate.Text">
+        function <span class="apidocSignatureSpan">seriate.</span>Text
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Text = function () {
+  return {
+    type: TYPES.Text
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Time" id="apidoc.element.seriate.Time">
+        function <span class="apidocSignatureSpan">seriate.</span>Time
+        <span class="apidocSignatureSpan">(scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Time = function (scale) {
+  return {
+    type: TYPES.Time,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.TinyInt" id="apidoc.element.seriate.TinyInt">
+        function <span class="apidocSignatureSpan">seriate.</span>TinyInt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TinyInt = function () {
+  return {
+    type: TYPES.TinyInt
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.UDT" id="apidoc.element.seriate.UDT">
+        function <span class="apidocSignatureSpan">seriate.</span>UDT
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">UDT = function () {
+  return {
+    type: TYPES.UDT
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.UNIQUEIDENTIFIER" id="apidoc.element.seriate.UNIQUEIDENTIFIER">
+        function <span class="apidocSignatureSpan">seriate.</span>UNIQUEIDENTIFIER
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">UNIQUEIDENTIFIER = function () {
+  return {
+    type: TYPES.UniqueIdentifier
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.UniqueIdentifier" id="apidoc.element.seriate.UniqueIdentifier">
+        function <span class="apidocSignatureSpan">seriate.</span>UniqueIdentifier
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">UniqueIdentifier = function () {
+  return {
+    type: TYPES.UniqueIdentifier
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.VARBINARY" id="apidoc.element.seriate.VARBINARY">
+        function <span class="apidocSignatureSpan">seriate.</span>VARBINARY
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">VARBINARY = function (length) {
+  return {
+    type: TYPES.VarBinary,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.VARCHAR" id="apidoc.element.seriate.VARCHAR">
+        function <span class="apidocSignatureSpan">seriate.</span>VARCHAR
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">VARCHAR = function (length) {
+  return {
+    type: TYPES.VarChar,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.VarBinary" id="apidoc.element.seriate.VarBinary">
+        function <span class="apidocSignatureSpan">seriate.</span>VarBinary
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">VarBinary = function (length) {
+  return {
+    type: TYPES.VarBinary,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.VarChar" id="apidoc.element.seriate.VarChar">
+        function <span class="apidocSignatureSpan">seriate.</span>VarChar
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">VarChar = function (length) {
+  return {
+    type: TYPES.VarChar,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.XML" id="apidoc.element.seriate.XML">
+        function <span class="apidocSignatureSpan">seriate.</span>XML
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">XML = function () {
+  return {
+    type: TYPES.Xml
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Xml" id="apidoc.element.seriate.Xml">
+        function <span class="apidocSignatureSpan">seriate.</span>Xml
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Xml = function () {
+  return {
+    type: TYPES.Xml
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.addConnection" id="apidoc.element.seriate.addConnection">
+        function <span class="apidocSignatureSpan">seriate.</span>addConnection
+        <span class="apidocSignatureSpan">( config )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addConnection = function ( config ) {
+		connections.add( config );
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Specifying a step using a callback that takes an `execute` continuation
+
+Here&#x27;s an example of using a plain context to read a table, and then use data from that read to determine details about the
+ next step:
+
+```javascript
+// add a named connection pool
+sql.<span class="apidocCodeKeywordSpan">addConnection</span>( {
+	name: &#x22;example-1&#x22;,
+	user: &#x22;username&#x22;,
+	password: &#x22;pwd&#x22;,
+	host: &#x22;127.0.0.1&#x22;,
+	database: &#x22;master&#x22;
+} );
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.closeConnection" id="apidoc.element.seriate.closeConnection">
+        function <span class="apidocSignatureSpan">seriate.</span>closeConnection
+        <span class="apidocSignatureSpan">( config )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">closeConnection = function ( config ) {
+		connections.close( config );
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.emit" id="apidoc.element.seriate.emit">
+        function <span class="apidocSignatureSpan">seriate.</span>emit
+        <span class="apidocSignatureSpan">( topic, data )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">emit = function ( topic, data ) {
+		var envelope = this.getEnvelope( topic, data );
+		this._cache = this._cache || {};
+		var cache = this._cache[ topic ];
+		var invoker = function( subDef ) {
+			subDef.invokeSubscriber( envelope.data, envelope );
+		};
+		if ( !cache ) {
+			cache = this._cache[ topic ] = [];
+			var cacherFn = getCacher( topic, cache, invoker );
+			_.each( this._subscriptions, function( candidates ) {
+				_.each( slice.call( candidates, 0 ), cacherFn );
+			} );
+		} else {
+			_.each( slice.call( cache, 0 ), invoker );
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		config.host || config.server,
+		config.port || 1433,
+		config.database,
+		config.user );
+	pool = state.pools[ name ] = new sql.Connection( config );
+
+	pool.on( &#x22;connect&#x22;, function() {
+		api.<span class="apidocCodeKeywordSpan">emit</span>( &#x22;connected&#x22;, { name: name } );
+		log.info( &#x22;Connected to \&#x22;%s\&#x22;&#x22;, name );
+	} );
+
+	pool.on( &#x22;close&#x22;, function() {
+		api.emit( &#x22;closed&#x22;, { name: name } );
+		log.info( &#x22;Closed connection to \&#x22;%s\&#x22;&#x22;, name );
+		pool.removeAllListeners();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.execute" id="apidoc.element.seriate.execute">
+        function <span class="apidocSignatureSpan">seriate.</span>execute
+        <span class="apidocSignatureSpan">( connection, queryOptions )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">execute = function ( connection, queryOptions ) {
+		if ( arguments.length === 1 ) {
+			queryOptions = connection;
+			connection = undefined;
+		}
+		var conn = connections.get( connection );
+		var options = { metrics: this.metrics, namespace: this.metricsNamespace, connection: conn };
+		return promisify( new SqlContext( options ), queryOptions )
+			.then( function( data ) {
+				if ( data.__result__ ) {
+					return data.__result__;
+				} else {
+					return data[ queryOptions.procedure || queryOptions.name ];
+				}
+			} );
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var connection = {
+	user: &#x22;username&#x22;,
+	password: &#x22;pwd&#x22;,
+	host: &#x22;127.0.0.1&#x22;,
+	database: &#x22;master&#x22;
+};
+
+sql.<span class="apidocCodeKeywordSpan">execute</span>( connection, {
+		name: &#x22;selectFromSomeTableById&#x22;,
+		preparedSql: &#x22;select * from someTable where id = @id&#x22;,
+		params: {
+			id: {
+				val: 123,
+				type: sql.INT
+			}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.executeTransaction" id="apidoc.element.seriate.executeTransaction">
+        function <span class="apidocSignatureSpan">seriate.</span>executeTransaction
+        <span class="apidocSignatureSpan">( connection, queryOptions )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">executeTransaction = function ( connection, queryOptions ) {
+		if ( arguments.length === 1 ) {
+			queryOptions = connection;
+			connection = undefined;
+		}
+		var conn = connections.get( connection );
+		var options = { metrics: this.metrics, namespace: this.metricsNamespace, connection: conn };
+		return promisify( new TransactionContext( options ), queryOptions );
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var connection = {
+	user: &#x22;username&#x22;,
+	password: &#x22;pwd&#x22;,
+	host: &#x22;127.0.0.1&#x22;,
+	database: &#x22;master&#x22;
+};
+
+sql.<span class="apidocCodeKeywordSpan">executeTransaction</span>( connection, {
+		procedure: &#x22;UpdateCustomer&#x22;,
+		params: {
+			customerid: {
+				val: id,
+				type: sql.INT
+			},
+			balance: {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.first" id="apidoc.element.seriate.first">
+        function <span class="apidocSignatureSpan">seriate.</span>first
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">first = function () {
+		var args = Array.prototype.slice.call( arguments, 0 );
+		delete args[ args.length - 1 ].stream;
+		return this.execute.apply( this, args ).then( function( rows ) {
+			return rows[ 0 ];
+		} );
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.fromFile" id="apidoc.element.seriate.fromFile">
+        function <span class="apidocSignatureSpan">seriate.</span>fromFile
+        <span class="apidocSignatureSpan">( p )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fromFile = function ( p ) {
+		p = _getFilePath( p );
+		var ext = path.extname( p );
+		p = ( ext === &#x22;.&#x22; ) ? ( p + &#x22;sql&#x22; ) : ( ext.length === 0 ) ? p + &#x22;.sql&#x22; : p;
+		var content = fileCache[ p ];
+		if ( _.isEmpty( content ) ) {
+			content = fs.readFileSync( p, { encoding: &#x22;utf8&#x22; } );
+			fileCache[ p ] = content;
+		}
+		return content;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+} );
+
+sql.getPlainContext()
+	.step( &#x22;readUsers&#x22;, {
+		query: &#x22;select * From sys.sysusers&#x22;
+		// optionally you could do this if the
+		// above query were in a readUsers.sql file
+		// query: sql.<span class="apidocCodeKeywordSpan">fromFile</span>( &#x22;readUsers&#x22; );
+	} )
+	.end( function( sets ){
+		// sets has a &#x22;readUsers&#x22; property
+		// which contains the results of the query
+	} )
+	.error( function( err ){
+		console.log( err );
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.getEnvelope" id="apidoc.element.seriate.getEnvelope">
+        function <span class="apidocSignatureSpan">seriate.</span>getEnvelope
+        <span class="apidocSignatureSpan">( topic, data )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getEnvelope = function ( topic, data ) {
+		return {
+			topic: topic,
+			timeStamp: new Date(),
+			data: data
+		};
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.getPlainContext" id="apidoc.element.seriate.getPlainContext">
+        function <span class="apidocSignatureSpan">seriate.</span>getPlainContext
+        <span class="apidocSignatureSpan">( connection )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPlainContext = function ( connection ) {
+		var conn = connections.get( connection );
+		var options = { metrics: this.metrics, namespace: this.metricsNamespace, connection: conn };
+		return new SqlContext( options );
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+sql.setDefault( {
+	user: &#x22;username&#x22;,
+	password: &#x22;pwd&#x22;,
+	host: &#x22;127.0.0.1&#x22;,
+	database: &#x22;master&#x22;
+} );
+
+sql.<span class="apidocCodeKeywordSpan">getPlainContext</span>()
+	.step( &#x22;readUsers&#x22;, {
+		query: &#x22;select * From sys.sysusers&#x22;
+		// optionally you could do this if the
+		// above query were in a readUsers.sql file
+		// query: sql.fromFile( &#x22;readUsers&#x22; );
+	} )
+	.end( function( sets ){
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.getTransactionContext" id="apidoc.element.seriate.getTransactionContext">
+        function <span class="apidocSignatureSpan">seriate.</span>getTransactionContext
+        <span class="apidocSignatureSpan">( connection )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTransactionContext = function ( connection ) {
+		var options = { metrics: this.metrics, namespace: this.metricsNamespace };
+		if ( connection &#x26;&#x26; connection.isolationLevel ) {
+			options.isolationLevel = connection.isolationLevel;
+			delete connection.isolationLevel;
+		}
+		options.connection = connections.get( connection );
+		return new TransactionContext( options );
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+sql.addConnection( {
+	user: &#x22;username&#x22;,
+	password: &#x22;pwd&#x22;,
+	host: &#x22;127.0.0.1&#x22;,
+	database: &#x22;master&#x22;
+})
+
+sql.<span class="apidocCodeKeywordSpan">getTransactionContext</span>()
+	.step( &#x22;readUsers&#x22;, {
+		query: &#x22;select * From sys.sysusers&#x22;
+	} )
+	.step( &#x22;usersTransforms&#x22;, function( execute, data ) {
+		// data will contain a `readUsers` property with
+		// the prior step&#x27;s results in an array. You can
+		// use this approach with a callback to dynamically
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.off" id="apidoc.element.seriate.off">
+        function <span class="apidocSignatureSpan">seriate.</span>off
+        <span class="apidocSignatureSpan">( topic, context )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">off = function ( topic, context ) {
+		var self = this;
+		self._subscriptions = self._subscriptions || {};
+		self._cache = self._cache || {};
+		switch ( arguments.length ) {
+			case 0:
+				_.each( self._subscriptions, function( tpc ) {
+					_.each( tpc, function( subDef, idx ) {
+						removeSubscriber( subDef, self, idx, tpc );
+					} );
+				} );
+				self._subscriptions = {};
+				break;
+			case 1:
+				var type = Object.prototype.toString.call( topic ) === &#x22;[object String]&#x22; ? &#x22;topic&#x22; : topic instanceof SubscriptionDefinition
+ ? &#x22;def&#x22; : &#x22;context&#x22;;
+				switch ( type ) {
+					case &#x22;topic&#x22;:
+						if ( self._subscriptions[ topic ] ) {
+							_.each( self._subscriptions[ topic ], function( subDef, idx ) {
+								removeSubscriber( subDef, self, idx, self._subscriptions[ topic ] );
+							} );
+						}
+						break;
+					case &#x22;context&#x22;:
+						_.each( self._subscriptions, function( subs ) {
+							_.each( _.clone( subs ), function( subDef, idx ) {
+								if ( subDef._context === topic ) {
+									removeSubscriber( subDef, self, idx, subs );
+								}
+							} );
+						} );
+						break;
+					default:
+						// topic arg is the subDef in this case....
+						_.each( self._subscriptions[ topic.topic ], function( subDef, idx ) {
+							if ( subDef === topic ) {
+								removeSubscriber( subDef, self, idx, self._subscriptions[ topic.topic ] );
+							}
+						} );
+						break;
+				}
+				break;
+			default:
+				_.each( _.clone( self._subscriptions[ topic ] ), function( subDef, idx ) {
+					if ( subDef._context === context ) {
+						removeSubscriber( subDef, self, idx, self._subscriptions[ topic ] );
+					}
+				} );
+				break;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.on" id="apidoc.element.seriate.on">
+        function <span class="apidocSignatureSpan">seriate.</span>on
+        <span class="apidocSignatureSpan">( topic, callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">on = function ( topic, callback ) {
+		var self = this;
+		self._subscriptions = self._subscriptions || {};
+		self._subscriptions[ topic ] = self._subscriptions[ topic ] || [];
+		var subDef = new SubscriptionDefinition( topic, callback, self );
+		self._subscriptions[ topic ].push( subDef );
+
+		// Next, add the SubscriptionDefinition to any relevant existing cache(s)
+		_.each( self._cache, function( list, key ) {
+			getCacher( key, list )( subDef );
+		} );
+
+		return self._subscriptions[ topic ][ self._subscriptions[ topic ].length - 1 ];
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		name,
+		config.host || config.server,
+		config.port || 1433,
+		config.database,
+		config.user );
+	pool = state.pools[ name ] = new sql.Connection( config );
+
+	pool.<span class="apidocCodeKeywordSpan">on</span>( &#x22;connect&#x22;, function() {
+		api.emit( &#x22;connected&#x22;, { name: name } );
+		log.info( &#x22;Connected to \&#x22;%s\&#x22;&#x22;, name );
+	} );
+
+	pool.on( &#x22;close&#x22;, function() {
+		api.emit( &#x22;closed&#x22;, { name: name } );
+		log.info( &#x22;Closed connection to \&#x22;%s\&#x22;&#x22;, name );
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.once" id="apidoc.element.seriate.once">
+        function <span class="apidocSignatureSpan">seriate.</span>once
+        <span class="apidocSignatureSpan">( topic, callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">once = function ( topic, callback ) {
+		return this.on( topic, callback ).once();
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.resetConnections" id="apidoc.element.seriate.resetConnections">
+        function <span class="apidocSignatureSpan">seriate.</span>resetConnections
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">resetConnections = function () {
+		connections.reset();
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.setDefault" id="apidoc.element.seriate.setDefault">
+        function <span class="apidocSignatureSpan">seriate.</span>setDefault
+        <span class="apidocSignatureSpan">( config )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setDefault = function ( config ) {
+		config.name = &#x22;default&#x22;;
+		connections.add( config );
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Specifying a step using just the query options object argument
+
+Here&#x27;s an example of using a plain context to read a table:
+
+```javascript
+// set a default connection pool
+sql.<span class="apidocCodeKeywordSpan">setDefault</span>( {
+	user: &#x22;username&#x22;,
+	password: &#x22;pwd&#x22;,
+	host: &#x22;127.0.0.1&#x22;,
+	database: &#x22;master&#x22;
+} );
+
+sql.getPlainContext()
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.setDefaultConfig" id="apidoc.element.seriate.setDefaultConfig">
+        function <span class="apidocSignatureSpan">seriate.</span>setDefaultConfig
+        <span class="apidocSignatureSpan">( config )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setDefaultConfig = function ( config ) {
+		config.name = &#x22;default&#x22;;
+		connections.add( config );
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.useMetrics" id="apidoc.element.seriate.useMetrics">
+        function <span class="apidocSignatureSpan">seriate.</span>useMetrics
+        <span class="apidocSignatureSpan">( metrics, namespace )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">useMetrics = function ( metrics, namespace ) {
+		this.metrics = metrics;
+		this.metricsNamespace = namespace;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.BigInt" id="apidoc.module.seriate.BigInt">module seriate.BigInt</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.BigInt.BigInt" id="apidoc.element.seriate.BigInt.BigInt">
+        function <span class="apidocSignatureSpan">seriate.</span>BigInt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">BigInt = function () {
+  return {
+    type: TYPES.BigInt
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.BigInt.inspect" id="apidoc.element.seriate.BigInt.inspect">
+        function <span class="apidocSignatureSpan">seriate.BigInt.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Binary" id="apidoc.module.seriate.Binary">module seriate.Binary</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Binary.Binary" id="apidoc.element.seriate.Binary.Binary">
+        function <span class="apidocSignatureSpan">seriate.</span>Binary
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Binary = function (length) {
+  return {
+    type: TYPES.Binary,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Binary.inspect" id="apidoc.element.seriate.Binary.inspect">
+        function <span class="apidocSignatureSpan">seriate.Binary.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Bit" id="apidoc.module.seriate.Bit">module seriate.Bit</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Bit.Bit" id="apidoc.element.seriate.Bit.Bit">
+        function <span class="apidocSignatureSpan">seriate.</span>Bit
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Bit = function () {
+  return {
+    type: TYPES.Bit
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Bit.inspect" id="apidoc.element.seriate.Bit.inspect">
+        function <span class="apidocSignatureSpan">seriate.Bit.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Char" id="apidoc.module.seriate.Char">module seriate.Char</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Char.Char" id="apidoc.element.seriate.Char.Char">
+        function <span class="apidocSignatureSpan">seriate.</span>Char
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Char = function (length) {
+  return {
+    type: TYPES.Char,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Char.inspect" id="apidoc.element.seriate.Char.inspect">
+        function <span class="apidocSignatureSpan">seriate.Char.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Date" id="apidoc.module.seriate.Date">module seriate.Date</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Date.Date" id="apidoc.element.seriate.Date.Date">
+        function <span class="apidocSignatureSpan">seriate.</span>Date
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Date = function () {
+  return {
+    type: TYPES.Date
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Date.inspect" id="apidoc.element.seriate.Date.inspect">
+        function <span class="apidocSignatureSpan">seriate.Date.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.DateTime" id="apidoc.module.seriate.DateTime">module seriate.DateTime</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DateTime.DateTime" id="apidoc.element.seriate.DateTime.DateTime">
+        function <span class="apidocSignatureSpan">seriate.</span>DateTime
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DateTime = function () {
+  return {
+    type: TYPES.DateTime
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DateTime.inspect" id="apidoc.element.seriate.DateTime.inspect">
+        function <span class="apidocSignatureSpan">seriate.DateTime.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.DateTime2" id="apidoc.module.seriate.DateTime2">module seriate.DateTime2</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DateTime2.DateTime2" id="apidoc.element.seriate.DateTime2.DateTime2">
+        function <span class="apidocSignatureSpan">seriate.</span>DateTime2
+        <span class="apidocSignatureSpan">(scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DateTime2 = function (scale) {
+  return {
+    type: TYPES.DateTime2,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DateTime2.inspect" id="apidoc.element.seriate.DateTime2.inspect">
+        function <span class="apidocSignatureSpan">seriate.DateTime2.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.DateTimeOffset" id="apidoc.module.seriate.DateTimeOffset">module seriate.DateTimeOffset</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DateTimeOffset.DateTimeOffset" id="apidoc.element.seriate.DateTimeOffset.DateTimeOffset">
+        function <span class="apidocSignatureSpan">seriate.</span>DateTimeOffset
+        <span class="apidocSignatureSpan">(scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DateTimeOffset = function (scale) {
+  return {
+    type: TYPES.DateTimeOffset,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.DateTimeOffset.inspect" id="apidoc.element.seriate.DateTimeOffset.inspect">
+        function <span class="apidocSignatureSpan">seriate.DateTimeOffset.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Decimal" id="apidoc.module.seriate.Decimal">module seriate.Decimal</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Decimal.Decimal" id="apidoc.element.seriate.Decimal.Decimal">
+        function <span class="apidocSignatureSpan">seriate.</span>Decimal
+        <span class="apidocSignatureSpan">(precision, scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Decimal = function (precision, scale) {
+  return {
+    type: TYPES.Decimal,
+    precision: precision,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Decimal.inspect" id="apidoc.element.seriate.Decimal.inspect">
+        function <span class="apidocSignatureSpan">seriate.Decimal.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Float" id="apidoc.module.seriate.Float">module seriate.Float</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Float.Float" id="apidoc.element.seriate.Float.Float">
+        function <span class="apidocSignatureSpan">seriate.</span>Float
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Float = function () {
+  return {
+    type: TYPES.Float
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Float.inspect" id="apidoc.element.seriate.Float.inspect">
+        function <span class="apidocSignatureSpan">seriate.Float.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Geography" id="apidoc.module.seriate.Geography">module seriate.Geography</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Geography.Geography" id="apidoc.element.seriate.Geography.Geography">
+        function <span class="apidocSignatureSpan">seriate.</span>Geography
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Geography = function () {
+  return {
+    type: TYPES.Geography
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Geography.inspect" id="apidoc.element.seriate.Geography.inspect">
+        function <span class="apidocSignatureSpan">seriate.Geography.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Geometry" id="apidoc.module.seriate.Geometry">module seriate.Geometry</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Geometry.Geometry" id="apidoc.element.seriate.Geometry.Geometry">
+        function <span class="apidocSignatureSpan">seriate.</span>Geometry
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Geometry = function () {
+  return {
+    type: TYPES.Geometry
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Geometry.inspect" id="apidoc.element.seriate.Geometry.inspect">
+        function <span class="apidocSignatureSpan">seriate.Geometry.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Image" id="apidoc.module.seriate.Image">module seriate.Image</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Image.Image" id="apidoc.element.seriate.Image.Image">
+        function <span class="apidocSignatureSpan">seriate.</span>Image
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Image = function () {
+  return {
+    type: TYPES.Image
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Image.inspect" id="apidoc.element.seriate.Image.inspect">
+        function <span class="apidocSignatureSpan">seriate.Image.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Int" id="apidoc.module.seriate.Int">module seriate.Int</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Int.Int" id="apidoc.element.seriate.Int.Int">
+        function <span class="apidocSignatureSpan">seriate.</span>Int
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Int = function () {
+  return {
+    type: TYPES.Int
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Int.inspect" id="apidoc.element.seriate.Int.inspect">
+        function <span class="apidocSignatureSpan">seriate.Int.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Money" id="apidoc.module.seriate.Money">module seriate.Money</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Money.Money" id="apidoc.element.seriate.Money.Money">
+        function <span class="apidocSignatureSpan">seriate.</span>Money
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Money = function () {
+  return {
+    type: TYPES.Money
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Money.inspect" id="apidoc.element.seriate.Money.inspect">
+        function <span class="apidocSignatureSpan">seriate.Money.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.NChar" id="apidoc.module.seriate.NChar">module seriate.NChar</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NChar.NChar" id="apidoc.element.seriate.NChar.NChar">
+        function <span class="apidocSignatureSpan">seriate.</span>NChar
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NChar = function (length) {
+  return {
+    type: TYPES.NChar,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NChar.inspect" id="apidoc.element.seriate.NChar.inspect">
+        function <span class="apidocSignatureSpan">seriate.NChar.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.NText" id="apidoc.module.seriate.NText">module seriate.NText</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NText.NText" id="apidoc.element.seriate.NText.NText">
+        function <span class="apidocSignatureSpan">seriate.</span>NText
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NText = function () {
+  return {
+    type: TYPES.NText
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NText.inspect" id="apidoc.element.seriate.NText.inspect">
+        function <span class="apidocSignatureSpan">seriate.NText.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.NVarChar" id="apidoc.module.seriate.NVarChar">module seriate.NVarChar</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NVarChar.NVarChar" id="apidoc.element.seriate.NVarChar.NVarChar">
+        function <span class="apidocSignatureSpan">seriate.</span>NVarChar
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">NVarChar = function (length) {
+  return {
+    type: TYPES.NVarChar,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.NVarChar.inspect" id="apidoc.element.seriate.NVarChar.inspect">
+        function <span class="apidocSignatureSpan">seriate.NVarChar.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Numeric" id="apidoc.module.seriate.Numeric">module seriate.Numeric</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Numeric.Numeric" id="apidoc.element.seriate.Numeric.Numeric">
+        function <span class="apidocSignatureSpan">seriate.</span>Numeric
+        <span class="apidocSignatureSpan">(precision, scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Numeric = function (precision, scale) {
+  return {
+    type: TYPES.Numeric,
+    precision: precision,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Numeric.inspect" id="apidoc.element.seriate.Numeric.inspect">
+        function <span class="apidocSignatureSpan">seriate.Numeric.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Real" id="apidoc.module.seriate.Real">module seriate.Real</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Real.Real" id="apidoc.element.seriate.Real.Real">
+        function <span class="apidocSignatureSpan">seriate.</span>Real
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Real = function () {
+  return {
+    type: TYPES.Real
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Real.inspect" id="apidoc.element.seriate.Real.inspect">
+        function <span class="apidocSignatureSpan">seriate.Real.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.SmallDateTime" id="apidoc.module.seriate.SmallDateTime">module seriate.SmallDateTime</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SmallDateTime.SmallDateTime" id="apidoc.element.seriate.SmallDateTime.SmallDateTime">
+        function <span class="apidocSignatureSpan">seriate.</span>SmallDateTime
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SmallDateTime = function () {
+  return {
+    type: TYPES.SmallDateTime
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SmallDateTime.inspect" id="apidoc.element.seriate.SmallDateTime.inspect">
+        function <span class="apidocSignatureSpan">seriate.SmallDateTime.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.SmallInt" id="apidoc.module.seriate.SmallInt">module seriate.SmallInt</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SmallInt.SmallInt" id="apidoc.element.seriate.SmallInt.SmallInt">
+        function <span class="apidocSignatureSpan">seriate.</span>SmallInt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SmallInt = function () {
+  return {
+    type: TYPES.SmallInt
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SmallInt.inspect" id="apidoc.element.seriate.SmallInt.inspect">
+        function <span class="apidocSignatureSpan">seriate.SmallInt.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.SmallMoney" id="apidoc.module.seriate.SmallMoney">module seriate.SmallMoney</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SmallMoney.SmallMoney" id="apidoc.element.seriate.SmallMoney.SmallMoney">
+        function <span class="apidocSignatureSpan">seriate.</span>SmallMoney
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">SmallMoney = function () {
+  return {
+    type: TYPES.SmallMoney
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.SmallMoney.inspect" id="apidoc.element.seriate.SmallMoney.inspect">
+        function <span class="apidocSignatureSpan">seriate.SmallMoney.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.TVP" id="apidoc.module.seriate.TVP">module seriate.TVP</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.TVP.TVP" id="apidoc.element.seriate.TVP.TVP">
+        function <span class="apidocSignatureSpan">seriate.</span>TVP
+        <span class="apidocSignatureSpan">(tvpType)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TVP = function (tvpType) {
+  return {
+    type: TYPES.TVP,
+    tvpType: tvpType
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.TVP.inspect" id="apidoc.element.seriate.TVP.inspect">
+        function <span class="apidocSignatureSpan">seriate.TVP.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Text" id="apidoc.module.seriate.Text">module seriate.Text</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Text.Text" id="apidoc.element.seriate.Text.Text">
+        function <span class="apidocSignatureSpan">seriate.</span>Text
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Text = function () {
+  return {
+    type: TYPES.Text
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Text.inspect" id="apidoc.element.seriate.Text.inspect">
+        function <span class="apidocSignatureSpan">seriate.Text.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Time" id="apidoc.module.seriate.Time">module seriate.Time</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Time.Time" id="apidoc.element.seriate.Time.Time">
+        function <span class="apidocSignatureSpan">seriate.</span>Time
+        <span class="apidocSignatureSpan">(scale)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Time = function (scale) {
+  return {
+    type: TYPES.Time,
+    scale: scale
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Time.inspect" id="apidoc.element.seriate.Time.inspect">
+        function <span class="apidocSignatureSpan">seriate.Time.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.TinyInt" id="apidoc.module.seriate.TinyInt">module seriate.TinyInt</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.TinyInt.TinyInt" id="apidoc.element.seriate.TinyInt.TinyInt">
+        function <span class="apidocSignatureSpan">seriate.</span>TinyInt
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">TinyInt = function () {
+  return {
+    type: TYPES.TinyInt
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.TinyInt.inspect" id="apidoc.element.seriate.TinyInt.inspect">
+        function <span class="apidocSignatureSpan">seriate.TinyInt.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.UDT" id="apidoc.module.seriate.UDT">module seriate.UDT</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.UDT.UDT" id="apidoc.element.seriate.UDT.UDT">
+        function <span class="apidocSignatureSpan">seriate.</span>UDT
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">UDT = function () {
+  return {
+    type: TYPES.UDT
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.UDT.inspect" id="apidoc.element.seriate.UDT.inspect">
+        function <span class="apidocSignatureSpan">seriate.UDT.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.UniqueIdentifier" id="apidoc.module.seriate.UniqueIdentifier">module seriate.UniqueIdentifier</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.UniqueIdentifier.UniqueIdentifier" id="apidoc.element.seriate.UniqueIdentifier.UniqueIdentifier">
+        function <span class="apidocSignatureSpan">seriate.</span>UniqueIdentifier
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">UniqueIdentifier = function () {
+  return {
+    type: TYPES.UniqueIdentifier
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.UniqueIdentifier.inspect" id="apidoc.element.seriate.UniqueIdentifier.inspect">
+        function <span class="apidocSignatureSpan">seriate.UniqueIdentifier.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.VarBinary" id="apidoc.module.seriate.VarBinary">module seriate.VarBinary</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.VarBinary.VarBinary" id="apidoc.element.seriate.VarBinary.VarBinary">
+        function <span class="apidocSignatureSpan">seriate.</span>VarBinary
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">VarBinary = function (length) {
+  return {
+    type: TYPES.VarBinary,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.VarBinary.inspect" id="apidoc.element.seriate.VarBinary.inspect">
+        function <span class="apidocSignatureSpan">seriate.VarBinary.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.VarChar" id="apidoc.module.seriate.VarChar">module seriate.VarChar</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.VarChar.VarChar" id="apidoc.element.seriate.VarChar.VarChar">
+        function <span class="apidocSignatureSpan">seriate.</span>VarChar
+        <span class="apidocSignatureSpan">(length)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">VarChar = function (length) {
+  return {
+    type: TYPES.VarChar,
+    length: length
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.VarChar.inspect" id="apidoc.element.seriate.VarChar.inspect">
+        function <span class="apidocSignatureSpan">seriate.VarChar.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.Xml" id="apidoc.module.seriate.Xml">module seriate.Xml</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Xml.Xml" id="apidoc.element.seriate.Xml.Xml">
+        function <span class="apidocSignatureSpan">seriate.</span>Xml
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Xml = function () {
+  return {
+    type: TYPES.Xml
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.Xml.inspect" id="apidoc.element.seriate.Xml.inspect">
+        function <span class="apidocSignatureSpan">seriate.Xml.</span>inspect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inspect = function () {
+  return &#x22;[sql.&#x22; + key + &#x22;]&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.connections" id="apidoc.module.seriate.connections">module seriate.connections</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.connections.add" id="apidoc.element.seriate.connections.add">
+        function <span class="apidocSignatureSpan">seriate.connections.</span>add
+        <span class="apidocSignatureSpan">( config )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function addConnection( config ) {
+	var name = getName( config );
+	var original = getConfiguration( name );
+	var alias = getAlias( config );
+	if ( alias !== name &#x26;&#x26; !state.aliases[ alias ] ) {
+		state.aliases[ alias ] = name;
+	}
+	if ( config.host ) {
+		config.server = config.host;
+	}
+	if ( name === &#x22;default&#x22; || !original ) {
+		state.configurations[ name ] = config;
+		return connect( name, config );
+	} else if ( alias === getAlias( original ) ) {
+		return getConnection( config );
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.connections.close" id="apidoc.element.seriate.connections.close">
+        function <span class="apidocSignatureSpan">seriate.connections.</span>close
+        <span class="apidocSignatureSpan">( config )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function closeConnection( config ) {
+	var name = getName( config );
+	var pool = state.pools[ name ];
+
+	if ( pool ) {
+		pool.close();
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+function closeConnection( config ) {
+	var name = getName( config );
+	var pool = state.pools[ name ];
+
+	if ( pool ) {
+		pool.<span class="apidocCodeKeywordSpan">close</span>();
+	}
+}
+
+function connect( name, config ) {
+	var pool = getPool( name );
+	if ( pool ) {
+		log.warn( &#x22;Connection for \&#x22;%s\&#x22; that already exists - existing connection pool will be used.&#x22;, name );
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.connections.emit" id="apidoc.element.seriate.connections.emit">
+        function <span class="apidocSignatureSpan">seriate.connections.</span>emit
+        <span class="apidocSignatureSpan">( topic, data )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">emit = function ( topic, data ) {
+		var envelope = this.getEnvelope( topic, data );
+		this._cache = this._cache || {};
+		var cache = this._cache[ topic ];
+		var invoker = function( subDef ) {
+			subDef.invokeSubscriber( envelope.data, envelope );
+		};
+		if ( !cache ) {
+			cache = this._cache[ topic ] = [];
+			var cacherFn = getCacher( topic, cache, invoker );
+			_.each( this._subscriptions, function( candidates ) {
+				_.each( slice.call( candidates, 0 ), cacherFn );
+			} );
+		} else {
+			_.each( slice.call( cache, 0 ), invoker );
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		config.host || config.server,
+		config.port || 1433,
+		config.database,
+		config.user );
+	pool = state.pools[ name ] = new sql.Connection( config );
+
+	pool.on( &#x22;connect&#x22;, function() {
+		api.<span class="apidocCodeKeywordSpan">emit</span>( &#x22;connected&#x22;, { name: name } );
+		log.info( &#x22;Connected to \&#x22;%s\&#x22;&#x22;, name );
+	} );
+
+	pool.on( &#x22;close&#x22;, function() {
+		api.emit( &#x22;closed&#x22;, { name: name } );
+		log.info( &#x22;Closed connection to \&#x22;%s\&#x22;&#x22;, name );
+		pool.removeAllListeners();
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.connections.get" id="apidoc.element.seriate.connections.get">
+        function <span class="apidocSignatureSpan">seriate.connections.</span>get
+        <span class="apidocSignatureSpan">( config )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getConnection( config ) {
+	var name = getName( config );
+	var pool = state.pools[ name ];
+	var connection = state.connections[ name ];
+	var configuration = state.configurations[ name ];
+	var aliasedName = state.aliases[ name ];
+	if ( !pool &#x26;&#x26; !connection &#x26;&#x26; aliasedName ) {
+		name = aliasedName;
+		pool = state.pools[ name ];
+		connection = state.connections[ name ];
+		configuration = state.configurations[ name ];
+	}
+
+	if ( connection ) {
+		return connection;
+	} else if ( pool ) {
+		connection = pool.connect()
+			.then( function() {
+				return pool;
+			} );
+		state.connections[ name ] = connection;
+		return connection;
+	} else if ( configuration ) {
+		return connect( name, configuration );
+	} else if ( config === undefined || _.isString( config ) ) {
+		return when.reject( new Error( &#x22;No connection named \&#x22;&#x22; + name + &#x22;\&#x22; exists&#x22; ) );
+	} else {
+		return addConnection( config );
+	}
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.connections.getEnvelope" id="apidoc.element.seriate.connections.getEnvelope">
+        function <span class="apidocSignatureSpan">seriate.connections.</span>getEnvelope
+        <span class="apidocSignatureSpan">( topic, data )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getEnvelope = function ( topic, data ) {
+		return {
+			topic: topic,
+			timeStamp: new Date(),
+			data: data
+		};
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.connections.off" id="apidoc.element.seriate.connections.off">
+        function <span class="apidocSignatureSpan">seriate.connections.</span>off
+        <span class="apidocSignatureSpan">( topic, context )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">off = function ( topic, context ) {
+		var self = this;
+		self._subscriptions = self._subscriptions || {};
+		self._cache = self._cache || {};
+		switch ( arguments.length ) {
+			case 0:
+				_.each( self._subscriptions, function( tpc ) {
+					_.each( tpc, function( subDef, idx ) {
+						removeSubscriber( subDef, self, idx, tpc );
+					} );
+				} );
+				self._subscriptions = {};
+				break;
+			case 1:
+				var type = Object.prototype.toString.call( topic ) === &#x22;[object String]&#x22; ? &#x22;topic&#x22; : topic instanceof SubscriptionDefinition
+ ? &#x22;def&#x22; : &#x22;context&#x22;;
+				switch ( type ) {
+					case &#x22;topic&#x22;:
+						if ( self._subscriptions[ topic ] ) {
+							_.each( self._subscriptions[ topic ], function( subDef, idx ) {
+								removeSubscriber( subDef, self, idx, self._subscriptions[ topic ] );
+							} );
+						}
+						break;
+					case &#x22;context&#x22;:
+						_.each( self._subscriptions, function( subs ) {
+							_.each( _.clone( subs ), function( subDef, idx ) {
+								if ( subDef._context === topic ) {
+									removeSubscriber( subDef, self, idx, subs );
+								}
+							} );
+						} );
+						break;
+					default:
+						// topic arg is the subDef in this case....
+						_.each( self._subscriptions[ topic.topic ], function( subDef, idx ) {
+							if ( subDef === topic ) {
+								removeSubscriber( subDef, self, idx, self._subscriptions[ topic.topic ] );
+							}
+						} );
+						break;
+				}
+				break;
+			default:
+				_.each( _.clone( self._subscriptions[ topic ] ), function( subDef, idx ) {
+					if ( subDef._context === context ) {
+						removeSubscriber( subDef, self, idx, self._subscriptions[ topic ] );
+					}
+				} );
+				break;
+		}
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.connections.on" id="apidoc.element.seriate.connections.on">
+        function <span class="apidocSignatureSpan">seriate.connections.</span>on
+        <span class="apidocSignatureSpan">( topic, callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">on = function ( topic, callback ) {
+		var self = this;
+		self._subscriptions = self._subscriptions || {};
+		self._subscriptions[ topic ] = self._subscriptions[ topic ] || [];
+		var subDef = new SubscriptionDefinition( topic, callback, self );
+		self._subscriptions[ topic ].push( subDef );
+
+		// Next, add the SubscriptionDefinition to any relevant existing cache(s)
+		_.each( self._cache, function( list, key ) {
+			getCacher( key, list )( subDef );
+		} );
+
+		return self._subscriptions[ topic ][ self._subscriptions[ topic ].length - 1 ];
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+		name,
+		config.host || config.server,
+		config.port || 1433,
+		config.database,
+		config.user );
+	pool = state.pools[ name ] = new sql.Connection( config );
+
+	pool.<span class="apidocCodeKeywordSpan">on</span>( &#x22;connect&#x22;, function() {
+		api.emit( &#x22;connected&#x22;, { name: name } );
+		log.info( &#x22;Connected to \&#x22;%s\&#x22;&#x22;, name );
+	} );
+
+	pool.on( &#x22;close&#x22;, function() {
+		api.emit( &#x22;closed&#x22;, { name: name } );
+		log.info( &#x22;Closed connection to \&#x22;%s\&#x22;&#x22;, name );
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.connections.once" id="apidoc.element.seriate.connections.once">
+        function <span class="apidocSignatureSpan">seriate.connections.</span>once
+        <span class="apidocSignatureSpan">( topic, callback )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">once = function ( topic, callback ) {
+		return this.on( topic, callback ).once();
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.connections.reset" id="apidoc.element.seriate.connections.reset">
+        function <span class="apidocSignatureSpan">seriate.connections.</span>reset
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resetState() {
+	state = {
+		pools: {},
+		connections: {},
+		configurations: {},
+		aliases: {}
+	};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.seriate.utils" id="apidoc.module.seriate.utils">module seriate.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.seriate.utils.fromFile" id="apidoc.element.seriate.utils.fromFile">
+        function <span class="apidocSignatureSpan">seriate.utils.</span>fromFile
+        <span class="apidocSignatureSpan">( p )</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fromFile = function ( p ) {
+		p = _getFilePath( p );
+		var ext = path.extname( p );
+		p = ( ext === &#x22;.&#x22; ) ? ( p + &#x22;sql&#x22; ) : ( ext.length === 0 ) ? p + &#x22;.sql&#x22; : p;
+		var content = fileCache[ p ];
+		if ( _.isEmpty( content ) ) {
+			content = fs.readFileSync( p, { encoding: &#x22;utf8&#x22; } );
+			fileCache[ p ] = content;
+		}
+		return content;
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+} );
+
+sql.getPlainContext()
+	.step( &#x22;readUsers&#x22;, {
+		query: &#x22;select * From sys.sysusers&#x22;
+		// optionally you could do this if the
+		// above query were in a readUsers.sql file
+		// query: sql.<span class="apidocCodeKeywordSpan">fromFile</span>( &#x22;readUsers&#x22; );
+	} )
+	.end( function( sets ){
+		// sets has a &#x22;readUsers&#x22; property
+		// which contains the results of the query
+	} )
+	.error( function( err ){
+		console.log( err );
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
