@@ -1,42 +1,44 @@
-<svg height="622" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="622" fill="#555" width="720"></rect>
+<svg height="654" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="654" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">22 megabytes</tspan>
-<tspan x="10" y="42">└─┬ seriate@0.9.0 </tspan>
-<tspan x="10" y="58">  ├── callsite@1.0.0 </tspan>
-<tspan x="10" y="74">  ├── configya@0.2.2 </tspan>
-<tspan x="10" y="90">  ├── lodash@3.10.1 </tspan>
-<tspan x="10" y="106">  ├── machina@1.1.2 </tspan>
-<tspan x="10" y="122">  ├─┬ monologue.js@0.3.5 </tspan>
-<tspan x="10" y="138">  │ └─┬ riveter@0.2.0 </tspan>
-<tspan x="10" y="154">  │   └── lodash@2.4.2 </tspan>
-<tspan x="10" y="170">  ├─┬ mssql@2.3.2 </tspan>
-<tspan x="10" y="186">  │ ├── generic-pool@2.5.4 </tspan>
-<tspan x="10" y="202">  │ ├─┬ promise@7.1.1 </tspan>
-<tspan x="10" y="218">  │ │ └── asap@2.0.5 </tspan>
-<tspan x="10" y="234">  │ └─┬ tedious@1.13.2 </tspan>
-<tspan x="10" y="250">  │   ├─┬ babel-runtime@5.8.38 </tspan>
-<tspan x="10" y="266">  │   │ └── core-js@1.2.7 </tspan>
-<tspan x="10" y="282">  │   ├── big-number@0.3.1 </tspan>
-<tspan x="10" y="298">  │   ├── bl@1.2.0 </tspan>
-<tspan x="10" y="314">  │   ├── iconv-lite@0.4.15 </tspan>
-<tspan x="10" y="330">  │   ├─┬ readable-stream@2.2.7 </tspan>
-<tspan x="10" y="346">  │   │ ├── buffer-shims@1.0.0 </tspan>
-<tspan x="10" y="362">  │   │ ├── core-util-is@1.0.2 </tspan>
-<tspan x="10" y="378">  │   │ ├── inherits@2.0.3 </tspan>
-<tspan x="10" y="394">  │   │ ├── isarray@1.0.0 </tspan>
-<tspan x="10" y="410">  │   │ ├── process-nextick-args@1.0.7 </tspan>
-<tspan x="10" y="426">  │   │ ├── string_decoder@1.0.0 </tspan>
-<tspan x="10" y="442">  │   │ └── util-deprecate@1.0.2 </tspan>
-<tspan x="10" y="458">  │   └── sprintf@0.1.5 </tspan>
-<tspan x="10" y="474">  ├─┬ postal@1.0.11 </tspan>
-<tspan x="10" y="490">  │ └── lodash@4.17.4 </tspan>
-<tspan x="10" y="506">  ├── when@3.7.8 </tspan>
-<tspan x="10" y="522">  ├─┬ whistlepunk@0.3.3 </tspan>
-<tspan x="10" y="538">  │ ├── colors@1.0.3 </tspan>
-<tspan x="10" y="554">  │ ├─┬ debug@2.2.0 </tspan>
-<tspan x="10" y="570">  │ │ └── ms@0.7.1 </tspan>
-<tspan x="10" y="586">  │ └── moment@2.10.2 </tspan>
-<tspan x="10" y="602">  └── xmldom@0.1.27</tspan>
+<tspan x="10" y="26">22 megabytes installed</tspan>
+<tspan x="10" y="42"></tspan>
+<tspan x="10" y="58">node_modules</tspan>
+<tspan x="10" y="74">└─┬ seriate@0.9.0 </tspan>
+<tspan x="10" y="90">  ├── callsite@1.0.0 </tspan>
+<tspan x="10" y="106">  ├── configya@0.2.2 </tspan>
+<tspan x="10" y="122">  ├── lodash@3.10.1 </tspan>
+<tspan x="10" y="138">  ├── machina@1.1.2 </tspan>
+<tspan x="10" y="154">  ├─┬ monologue.js@0.3.5 </tspan>
+<tspan x="10" y="170">  │ └─┬ riveter@0.2.0 </tspan>
+<tspan x="10" y="186">  │   └── lodash@2.4.2 </tspan>
+<tspan x="10" y="202">  ├─┬ mssql@2.3.2 </tspan>
+<tspan x="10" y="218">  │ ├── generic-pool@2.5.4 </tspan>
+<tspan x="10" y="234">  │ ├─┬ promise@7.1.1 </tspan>
+<tspan x="10" y="250">  │ │ └── asap@2.0.5 </tspan>
+<tspan x="10" y="266">  │ └─┬ tedious@1.13.2 </tspan>
+<tspan x="10" y="282">  │   ├─┬ babel-runtime@5.8.38 </tspan>
+<tspan x="10" y="298">  │   │ └── core-js@1.2.7 </tspan>
+<tspan x="10" y="314">  │   ├── big-number@0.3.1 </tspan>
+<tspan x="10" y="330">  │   ├── bl@1.2.0 </tspan>
+<tspan x="10" y="346">  │   ├── iconv-lite@0.4.15 </tspan>
+<tspan x="10" y="362">  │   ├─┬ readable-stream@2.2.9 </tspan>
+<tspan x="10" y="378">  │   │ ├── buffer-shims@1.0.0 </tspan>
+<tspan x="10" y="394">  │   │ ├── core-util-is@1.0.2 </tspan>
+<tspan x="10" y="410">  │   │ ├── inherits@2.0.3 </tspan>
+<tspan x="10" y="426">  │   │ ├── isarray@1.0.0 </tspan>
+<tspan x="10" y="442">  │   │ ├── process-nextick-args@1.0.7 </tspan>
+<tspan x="10" y="458">  │   │ ├── string_decoder@1.0.0 </tspan>
+<tspan x="10" y="474">  │   │ └── util-deprecate@1.0.2 </tspan>
+<tspan x="10" y="490">  │   └── sprintf@0.1.5 </tspan>
+<tspan x="10" y="506">  ├─┬ postal@1.0.11 </tspan>
+<tspan x="10" y="522">  │ └── lodash@4.17.4 </tspan>
+<tspan x="10" y="538">  ├── when@3.7.8 </tspan>
+<tspan x="10" y="554">  ├─┬ whistlepunk@0.3.3 </tspan>
+<tspan x="10" y="570">  │ ├── colors@1.0.3 </tspan>
+<tspan x="10" y="586">  │ ├─┬ debug@2.2.0 </tspan>
+<tspan x="10" y="602">  │ │ └── ms@0.7.1 </tspan>
+<tspan x="10" y="618">  │ └── moment@2.10.2 </tspan>
+<tspan x="10" y="634">  └── xmldom@0.1.27</tspan>
 </text>
 </svg>
